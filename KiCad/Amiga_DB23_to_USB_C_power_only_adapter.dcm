@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DB23_Male
+D 23-pin male D-SUB connector
+K male D-SUB connector
+F  ~
+$ENDCMP
+#
+#End Doc Library

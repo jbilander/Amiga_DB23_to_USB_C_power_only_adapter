@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Amiga_DB23_to_USB_C_power_only_adapter)(type Legacy)(uri ${KIPRJMOD}/Amiga_DB23_to_USB_C_power_only_adapter.lib)(options "")(descr ""))
+)

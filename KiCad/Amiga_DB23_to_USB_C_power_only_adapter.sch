@@ -1,0 +1,164 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3350 2450 0    50   Input ~ 0
+VCC
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60573639
+P 3350 2450
+F 0 "#FLG0101" H 3350 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 2623 50  0000 C CNN
+F 2 "" H 3350 2450 50  0001 C CNN
+F 3 "~" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60574A8A
+P 3350 2450
+F 0 "#PWR0101" H 3350 2300 50  0001 C CNN
+F 1 "+5V" H 3365 2623 50  0000 C CNN
+F 2 "" H 3350 2450 50  0001 C CNN
+F 3 "" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 605766E0
+P 3700 2450
+F 0 "#FLG0102" H 3700 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 2623 50  0000 C CNN
+F 2 "" H 3700 2450 50  0001 C CNN
+F 3 "~" H 3700 2450 50  0001 C CNN
+	1    3700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60576DC0
+P 3700 2450
+F 0 "#PWR0102" H 3700 2200 50  0001 C CNN
+F 1 "GND" H 3705 2277 50  0000 C CNN
+F 2 "" H 3700 2450 50  0001 C CNN
+F 3 "" H 3700 2450 50  0001 C CNN
+	1    3700 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 2450 0    50   Input ~ 0
+GND
+$Comp
+L Amiga_DB23_to_USB_C_power_only_adapter:DB23_Male J1
+U 1 1 64806F8F
+P 5600 2050
+F 0 "J1" V 5917 2038 50  0000 C CNN
+F 1 "DB23_Male" V 5826 2038 50  0000 C CNN
+F 2 "Amiga_DB23_to_USB_C_power_only_adapter:DSUB-23_Male_EdgeMount_P2.77mm" H 5600 1950 50  0001 C CNN
+F 3 " ~" H 5600 1950 50  0001 C CNN
+	1    5600 2050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4500 2350 3    50   Input ~ 0
+VCC
+Text GLabel 5900 2500 3    50   Input ~ 0
+GND
+Wire Wire Line
+	5500 2350 5500 2500
+Wire Wire Line
+	6300 2350 6300 2500
+Wire Wire Line
+	5500 2500 5700 2500
+Wire Wire Line
+	5700 2350 5700 2500
+Connection ~ 5700 2500
+Wire Wire Line
+	5700 2500 5900 2500
+Wire Wire Line
+	5900 2350 5900 2500
+Connection ~ 5900 2500
+Wire Wire Line
+	5900 2500 6100 2500
+Wire Wire Line
+	6100 2350 6100 2500
+Connection ~ 6100 2500
+Wire Wire Line
+	6100 2500 6300 2500
+$Comp
+L Amiga_DB23_to_USB_C_power_only_adapter:UJC-HP-3-SMT-TR J2
+U 1 1 64825039
+P 5650 3300
+F 0 "J2" H 5980 3296 50  0000 L CNN
+F 1 "UJC-HP-3-SMT-TR" H 5980 3205 50  0000 L CNN
+F 2 "Amiga_DB23_to_USB_C_power_only_adapter:CUI_UJC-HP-3-SMT-TR" H 5650 3300 50  0001 L BNN
+F 3 "" H 5650 3300 50  0001 L BNN
+F 4 "3.16mm" H 5650 3300 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "04/30/2020" H 5650 3300 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer recommendations" H 5650 3300 50  0001 L BNN "STANDARD"
+F 7 "CUI Devices" H 5650 3300 50  0001 L BNN "MANUFACTURER"
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3300 1    50   Input ~ 0
+VCC
+Text GLabel 4800 3400 3    50   Input ~ 0
+GND
+NoConn ~ 5150 3100
+NoConn ~ 5150 3200
+$Comp
+L Device:C_Small C2
+U 1 1 643A75FF
+P 4400 3350
+F 0 "C2" H 4492 3350 50  0000 L CNN
+F 1 "C_Small" H 4492 3305 50  0001 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4400 3350 50  0001 C CNN
+F 3 "~" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3400 5150 3600
+Connection ~ 5150 3400
+Wire Wire Line
+	4400 3250 4650 3250
+Wire Wire Line
+	4650 3250 4650 3300
+Wire Wire Line
+	4650 3300 5150 3300
+Wire Wire Line
+	4400 3450 4650 3450
+Wire Wire Line
+	4650 3450 4650 3400
+Wire Wire Line
+	4650 3400 5150 3400
+$Comp
+L Device:CP_Small C1
+U 1 1 643BB0FF
+P 3850 3350
+F 0 "C1" H 3938 3396 50  0000 L CNN
+F 1 "100uF Radial Pitch_2.5mm" H 3938 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3850 3350 50  0001 C CNN
+F 3 "~" H 3850 3350 50  0001 C CNN
+	1    3850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3250 4400 3250
+Connection ~ 4400 3250
+Wire Wire Line
+	3850 3450 4400 3450
+Connection ~ 4400 3450
+$EndSCHEMATC
